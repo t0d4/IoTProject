@@ -9,6 +9,13 @@
 /testbench/
 /*_sim/
 
+# document files
+!*.md
+# C source files
+!*.c
+!*.h
+# Image files
+!.jpg
 # project files
 !*.qpf
 !*.qsf
@@ -30,3 +37,6 @@
 !*.sdc
 # tcl files:
 !*.tcl
+
+# Python utilities
+*.py
