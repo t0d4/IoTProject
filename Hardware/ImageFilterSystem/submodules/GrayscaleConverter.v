@@ -53,14 +53,14 @@ wire [TMP_WIRE_WIDTH-1:0] pixelwise_sums [NUM_PIXELS-1:0];
 wire [TMP_WIRE_WIDTH-1:0] pixelwise_means [NUM_PIXELS-1:0];
 
 // wires to temporarily store the output value
-wire [BIT_PER_PIXEL-1:0] pixel_0_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_1_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_2_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_3_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_4_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_5_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_6_out_tmp,
-wire [BIT_PER_PIXEL-1:0] pixel_7_out_tmp,
+wire [BIT_PER_PIXEL-1:0] pixel_0_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_1_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_2_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_3_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_4_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_5_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_6_out_tmp;
+wire [BIT_PER_PIXEL-1:0] pixel_7_out_tmp;
 wire [BIT_PER_PIXEL-1:0] pixel_8_out_tmp;
 
 // calculate pixel-wise sum
