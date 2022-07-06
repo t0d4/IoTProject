@@ -96,7 +96,7 @@ assign pixel_6_out_tmp = pixelwise_means[6][BIT_PER_PIXEL-1:0];
 assign pixel_7_out_tmp = pixelwise_means[7][BIT_PER_PIXEL-1:0];
 assign pixel_8_out_tmp = pixelwise_means[8][BIT_PER_PIXEL-1:0];
 
-always @(posedge clk, reset) begin
+always @(posedge clk, posedge reset) begin
     if (reset) begin
         pixel_0_out <= 8'h00;
         pixel_1_out <= 8'h00;

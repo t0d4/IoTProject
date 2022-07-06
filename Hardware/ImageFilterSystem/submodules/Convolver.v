@@ -31,7 +31,7 @@ reg[TMP_WIRE_WIDTH-1:0] conv_out_tmp_sum_of_negative;
 assign conv_out = (conv_out_tmp_sum_of_negative>conv_out_tmp_sum_of_positive) ? 8'h00 :
                   (|conv_out_tmp[TMP_WIRE_WIDTH-1:8]) ? 8'hff : conv_out_tmp[BIT_PER_PIXEL-1:0];
 
-always @(posedge clk, reset) begin
+always @(posedge clk, posedge reset) begin
     if (reset) begin
         conv_out_tmp <= 8'b00000000;
     end
