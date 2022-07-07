@@ -148,20 +148,24 @@ int main() {
   //Fill uP buffer and show uP and FPGA buffers
   printf("\nWRITE: Copy a %d Bytes from uP to FPGA on physical address %x\n", 
     (int) DMA_TRANSFER_SIZE, (unsigned int) DMA_BUFF_PADD); 
-  char buffer[DMA_TRANSFER_SIZE] = {
-    1, 0, 0,  2, 3, 4,  1, 1, 1,
-    2, 3, 4,  1, 1, 1,  2, 3, 4,
-    1, 1, 1,  2, 3, 4,  1, 1, 1,
-    0, 0, 0,  0, 0
-  };
+  // char buffer[DMA_TRANSFER_SIZE] = {
+  //   1, 0, 0,  2, 3, 4,  1, 1, 1,
+  //   2, 3, 4,  1, 1, 1,  2, 3, 4,
+  //   1, 1, 1,  2, 3, 4,  1, 1, 1,
+  //   0, 0, 0,  0, 0
+  // };
   // expected return from fpga : 8
   // 3 + 3 - 4 + 3 + 3 = 8
+  char buffer[DMA_TRANSFER_SIZE] = {
+    10, 2, 2, 2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2, 2, 2, 2,
+    2, 2, 2, 0, 0, 0, 0, 0
+  };
 
   // for (i=0; i<DMA_TRANSFER_SIZE;i++) buffer[i] = 2;
-  printf("uP   buff before WR = "); 
+  printf("Input  = "); 
   printbuff(buffer, DMA_TRANSFER_SIZE);
-  printf("FPGA buff before WR = "); 
-  printbuff((char*)on_chip_RAM_vaddr, DMA_TRANSFER_SIZE);
 
   //Write uP fuffer to FPGA
   printf("Writing on /dev/dma_pl330...\n");
@@ -178,10 +182,6 @@ int main() {
 	close(f);
 	
   //print the result of the Write
-  printf("uP   buff after WR = "); 
-  printbuff(buffer, DMA_TRANSFER_SIZE);
-  printf("FPGA buff after WR = "); 
-  printbuff((char*)on_chip_RAM_vaddr, DMA_TRANSFER_SIZE);
 	if(memcmp((void*)buffer, on_chip_RAM_vaddr_void,(size_t)DMA_TRANSFER_SIZE)==0)
     printf("Write Successful!\n");
   else
@@ -191,11 +191,7 @@ int main() {
    //Fill uP buffer and show uP and FPGA buffers
   printf("\nREAD: Copy a %d Bytes from FPGA on physical address %x to uP\n", 
     (int) DMA_TRANSFER_SIZE, (unsigned int) DMA_BUFF_PADD); 
-  for (i=0; i<DMA_TRANSFER_SIZE;i++) buffer[i] = 3;
-  printf("uP   buff before RD = "); 
-  printbuff(buffer, DMA_TRANSFER_SIZE);
-  printf("FPGA buff before RD = "); 
-  printbuff((char*)on_chip_RAM_vaddr, DMA_TRANSFER_SIZE);
+  for (i=0; i<DMA_TRANSFER_SIZE;i++) buffer[i] = 255;
 
   //Read from FPGA to uP
   printf("Reading from /dev/dma_pl330...\n");
@@ -213,14 +209,7 @@ int main() {
   close(f);
   
   //print the result of the Read
-  printf("uP   buff after RD = "); 
-  printbuff(buffer, DMA_TRANSFER_SIZE);
-  printf("FPGA buff after RD = "); 
-  printbuff((char*)on_chip_RAM_vaddr, DMA_TRANSFER_SIZE);
-  if(memcmp((void*)buffer, on_chip_RAM_vaddr_void,(size_t)DMA_TRANSFER_SIZE)==0)
-    printf("Read Successful!\n");
-  else
-    printf("Read Error. Buffers are not equal\n");
+  printf("Output = %u\n", buffer[0]); 
 
 
 	// --------------clean up our memory mapping and exit -----------------//
