@@ -201,7 +201,7 @@ int main() {
     return errno;
   }
   // ret = read(f, buffer, DMA_TRANSFER_SIZE);
-  ret = read(f, buffer, 1);
+  ret = read(f, buffer, 32);
   if (ret < 0){
     perror("Failed to read the message from the device.");
     return errno;
@@ -209,7 +209,8 @@ int main() {
   close(f);
   
   //print the result of the Read
-  printf("Output = %u\n", buffer[0]); 
+  printf("Output = "); 
+  printbuff(buffer, DMA_TRANSFER_SIZE);
 
 
 	// --------------clean up our memory mapping and exit -----------------//
