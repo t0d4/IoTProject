@@ -1,4 +1,4 @@
-//Legal Notice: (C)2017 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2022 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -44,17 +44,18 @@ module soc_system_dipsw_pio (
   input            write_n;
   input   [ 31: 0] writedata;
 
-  wire             clk_en;
-  reg     [  3: 0] d1_data_in;
-  reg     [  3: 0] d2_data_in;
-  wire    [  3: 0] data_in;
-  reg     [  3: 0] edge_capture;
-  wire             edge_capture_wr_strobe;
-  wire    [  3: 0] edge_detect;
-  wire             irq;
-  reg     [  3: 0] irq_mask;
-  wire    [  3: 0] read_mux_out;
-  reg     [ 31: 0] readdata;
+
+wire             clk_en;
+reg     [  3: 0] d1_data_in;
+reg     [  3: 0] d2_data_in;
+wire    [  3: 0] data_in;
+reg     [  3: 0] edge_capture;
+wire             edge_capture_wr_strobe;
+wire    [  3: 0] edge_detect;
+wire             irq;
+reg     [  3: 0] irq_mask;
+wire    [  3: 0] read_mux_out;
+reg     [ 31: 0] readdata;
   assign clk_en = 1;
   //s1, which is an e_avalon_slave
   assign read_mux_out = ({4 {(address == 0)}} & data_in) |
@@ -133,15 +134,18 @@ module soc_system_dipsw_pio (
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-        begin
           d1_data_in <= 0;
-          d2_data_in <= 0;
-        end
       else if (clk_en)
-        begin
           d1_data_in <= data_in;
+    end
+
+
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d2_data_in <= 0;
+      else if (clk_en)
           d2_data_in <= d1_data_in;
-        end
     end
 
 
