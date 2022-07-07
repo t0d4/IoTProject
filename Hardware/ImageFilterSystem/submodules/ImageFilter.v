@@ -6,7 +6,7 @@ module ImageFilter #(
     input clk,
     input reset,
     // signals to connect to an Avalon-MM slave interface
-    input wire[4:0] address,
+    input wire[3:0] address,
     input read,
     output wire[31:0] readdata,
     input write,
@@ -17,15 +17,15 @@ module ImageFilter #(
 );
 
 // define names for local addresses (in the address space of this peripheral) that are to be designated by DMAC
-localparam PIXEL_0_ADDR = 5'b0000;
-localparam PIXEL_1_ADDR = 5'b0001;
-localparam PIXEL_2_ADDR = 5'b0010;
-localparam PIXEL_3_ADDR = 5'b0011;
-localparam PIXEL_4_ADDR = 5'b0100;
-localparam PIXEL_5_ADDR = 5'b0101;
-localparam PIXEL_6_ADDR = 5'b0110;
-localparam PIXEL_7_ADDR = 5'b0111;
-localparam PIXEL_8_ADDR = 5'b1000;
+localparam PIXEL_0_ADDR = 4'b0000;
+localparam PIXEL_1_ADDR = 4'b0001;
+localparam PIXEL_2_ADDR = 4'b0010;
+localparam PIXEL_3_ADDR = 4'b0011;
+localparam PIXEL_4_ADDR = 4'b0100;
+localparam PIXEL_5_ADDR = 4'b0101;
+localparam PIXEL_6_ADDR = 4'b0110;
+localparam PIXEL_7_ADDR = 4'b0111;
+localparam PIXEL_8_ADDR = 4'b1000;
 
 // state names
 localparam IDLE = 3'b000;
@@ -242,6 +242,7 @@ always @(posedge clk, posedge reset) begin
         pixel_8_red_tmp <= 8'h00;
         pixel_8_green_tmp <= 8'h00;
         pixel_8_blue_tmp <= 8'h00;
+        waitrequest <= 0;
     end
     else begin
         case (state)
