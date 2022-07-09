@@ -5,6 +5,7 @@
 
 int main(int argc, char **argv)
 {
+  //-------------------READ BMP FILE-----------------//
   unsigned char img[MAX_HEIGHT][MAX_WIDTH][3];
   unsigned char BitMapFileHeader[14];
   unsigned int biSize;
@@ -14,7 +15,6 @@ int main(int argc, char **argv)
 
   FILE *fp;
 
-  //-------------------READ BMP FILE-----------------//
   fp = fopen(argv[1], "rb");
 
   fread(&BitMapFileHeader, sizeof(char), 14, fp); 
