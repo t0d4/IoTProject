@@ -40,3 +40,6 @@
 
 # Python utilities
 *.py
+
+# bmp image
+!/Software/bmp/img/*
