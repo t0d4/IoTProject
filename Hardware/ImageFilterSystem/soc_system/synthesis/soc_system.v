@@ -60,6 +60,7 @@ module soc_system (
 		inout  wire        hps_0_hps_io_hps_io_gpio_inst_GPIO53,  //                               .hps_io_gpio_inst_GPIO53
 		inout  wire        hps_0_hps_io_hps_io_gpio_inst_GPIO54,  //                               .hps_io_gpio_inst_GPIO54
 		inout  wire        hps_0_hps_io_hps_io_gpio_inst_GPIO61,  //                               .hps_io_gpio_inst_GPIO61
+		output wire [6:0]  imagefilter_0_led_out_export,          //          imagefilter_0_led_out.export
 		input  wire [3:0]  imagefilter_0_switch_in_export,        //        imagefilter_0_switch_in.export
 		output wire [6:0]  led_pio_external_connection_export,    //    led_pio_external_connection.export
 		output wire [14:0] memory_mem_a,                          //                         memory.mem_a
@@ -259,7 +260,8 @@ module soc_system (
 		.write       (mm_interconnect_0_imagefilter_0_avalon_slave_0_write),       //               .write
 		.writedata   (mm_interconnect_0_imagefilter_0_avalon_slave_0_writedata),   //               .writedata
 		.waitrequest (mm_interconnect_0_imagefilter_0_avalon_slave_0_waitrequest), //               .waitrequest
-		.SW          (imagefilter_0_switch_in_export)                              //      switch_in.export
+		.SW          (imagefilter_0_switch_in_export),                             //      switch_in.export
+		.LED         (imagefilter_0_led_out_export)                                //        led_out.export
 	);
 
 	soc_system_button_pio button_pio (

@@ -1,0 +1,108 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/simulation/modelsim
+valtera_edge_detector
+Z1 !s110 1657252778
+!i10b 1
+!s100 Z9814a12O5?DUjml?2`d90
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IilLe]H;OAag[R=c<52QB=0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1656747076
+8/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect/altera_edge_detector.v
+F/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect/altera_edge_detector.v
+!i122 0
+L0 1 85
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1657252778.000000
+!s107 /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect/altera_edge_detector.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect|/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect/altera_edge_detector.v|
+!i113 1
+Z7 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect
+Z8 tCvgOpt 0
+vDE10_NANO_SoC_GHRD
+R1
+!i10b 1
+!s100 94N8oUETR^0cbCIAUYiLh1
+R2
+IY>2P8?0jEF;`_T`4A3AFO2
+R3
+R0
+w1657164736
+8/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/DE10_NANO_SoC_GHRD.v
+F/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/DE10_NANO_SoC_GHRD.v
+!i122 3
+L0 6 263
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/DE10_NANO_SoC_GHRD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem|/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/DE10_NANO_SoC_GHRD.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem
+R8
+n@d@e10_@n@a@n@o_@so@c_@g@h@r@d
+vdebounce
+R1
+!i10b 1
+!s100 zNI<ZT3;0174WH]bNg<YE2
+R2
+I^2Vkd?8P[BE62k5g?aa=N3
+R3
+R0
+R4
+8/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce/debounce.v
+F/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce/debounce.v
+!i122 1
+L0 13 62
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce/debounce.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce|/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce/debounce.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce
+R8
+vhps_reset
+R1
+!i10b 1
+!s100 PlXeAJ5oK^aIn^UDSi4Kg1
+R2
+Ij^EHlcl`S7ml<<B7nDY^P1
+R3
+R0
+R4
+8/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe/hps_reset.v
+F/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe/hps_reset.v
+!i122 2
+L0 40 47
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe/hps_reset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe|/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe/hps_reset.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe
+R8

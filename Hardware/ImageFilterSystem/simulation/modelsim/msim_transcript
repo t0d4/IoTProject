@@ -1,0 +1,1070 @@
+# do DE10_NANO_SoC_GHRD_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/toda_iot/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect/altera_edge_detector.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:38 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/edge_detect/altera_edge_detector.v 
+# -- Compiling module altera_edge_detector
+# 
+# Top level modules:
+# 	altera_edge_detector
+# End time: 12:59:38 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce/debounce.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:38 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/debounce/debounce.v 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 12:59:38 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe/hps_reset.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:38 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/ip/altsource_probe/hps_reset.v 
+# -- Compiling module hps_reset
+# 
+# Top level modules:
+# 	hps_reset
+# End time: 12:59:38 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/DE10_NANO_SoC_GHRD.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:38 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/DE10_NANO_SoC_GHRD.v 
+# -- Compiling module DE10_NANO_SoC_GHRD
+# 
+# Top level modules:
+# 	DE10_NANO_SoC_GHRD
+# End time: 12:59:38 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib soc_system
+# ** Warning: (vlib-34) Library already exists at "soc_system".
+# vmap soc_system soc_system
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap soc_system soc_system 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/soc_system.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:38 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/soc_system.v 
+# -- Compiling module soc_system
+# 
+# Top level modules:
+# 	soc_system
+# End time: 12:59:38 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:38 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 12:59:38 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2.v 
+# -- Compiling module soc_system_mm_interconnect_2
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_avalon_st_adapter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_avalon_st_adapter.v 
+# -- Compiling module soc_system_mm_interconnect_2_avalon_st_adapter
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_avalon_st_adapter
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1.v 
+# -- Compiling module soc_system_mm_interconnect_1
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v 
+# -- Compiling module soc_system_mm_interconnect_0
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module soc_system_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_avalon_st_adapter
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_sysid_qsys.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_sysid_qsys.v 
+# -- Compiling module soc_system_sysid_qsys
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_sysid_qsys.v(52): (vlog-2597) '2899645186' is being treated as 32-bit signed integer and will overflow.
+# 
+# Top level modules:
+# 	soc_system_sysid_qsys
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_led_pio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_led_pio.v 
+# -- Compiling module soc_system_led_pio
+# 
+# Top level modules:
+# 	soc_system_led_pio
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_jtag_uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_jtag_uart.v 
+# -- Compiling module soc_system_jtag_uart_sim_scfifo_w
+# -- Compiling module soc_system_jtag_uart_scfifo_w
+# -- Compiling module soc_system_jtag_uart_sim_scfifo_r
+# -- Compiling module soc_system_jtag_uart_scfifo_r
+# -- Compiling module soc_system_jtag_uart
+# 
+# Top level modules:
+# 	soc_system_jtag_uart
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0.v 
+# -- Compiling module soc_system_hps_0
+# 
+# Top level modules:
+# 	soc_system_hps_0
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io.v 
+# -- Compiling module soc_system_hps_0_hps_io
+# 
+# Top level modules:
+# 	soc_system_hps_0_hps_io
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram.v 
+# -- Compiling module hps_sdram
+# 
+# Top level modules:
+# 	hps_sdram
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_memphy.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_memphy.v 
+# -- Compiling module hps_sdram_p0_acv_hard_memphy
+# 
+# Top level modules:
+# 	hps_sdram_p0_acv_hard_memphy
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v 
+# -- Compiling module hps_sdram_p0_acv_hard_io_pads
+# 
+# Top level modules:
+# 	hps_sdram_p0_acv_hard_io_pads
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_hhp_qseq_synth_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_hhp_qseq_synth_top.v 
+# -- Compiling module altera_mem_if_hhp_qseq_synth_top
+# 
+# Top level modules:
+# 	altera_mem_if_hhp_qseq_synth_top
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_ldc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_ldc.v 
+# -- Compiling module hps_sdram_p0_acv_ldc
+# 
+# Top level modules:
+# 	hps_sdram_p0_acv_ldc
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_addr_cmd_pads.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_addr_cmd_pads.v 
+# -- Compiling module hps_sdram_p0_acv_hard_addr_cmd_pads
+# 
+# Top level modules:
+# 	hps_sdram_p0_acv_hard_addr_cmd_pads
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_generic_ddio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_generic_ddio.v 
+# -- Compiling module hps_sdram_p0_generic_ddio
+# 
+# Top level modules:
+# 	hps_sdram_p0_generic_ddio
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v 
+# -- Compiling module hps_sdram_p0_clock_pair_generator
+# 
+# Top level modules:
+# 	hps_sdram_p0_clock_pair_generator
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_altdqdqs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:39 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0_altdqdqs.v 
+# -- Compiling module hps_sdram_p0_altdqdqs
+# 
+# Top level modules:
+# 	hps_sdram_p0_altdqdqs
+# End time: 12:59:39 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_f2sdram_only_master.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_f2sdram_only_master.v 
+# -- Compiling module soc_system_f2sdram_only_master
+# 
+# Top level modules:
+# 	soc_system_f2sdram_only_master
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_packets_to_master.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_packets_to_master.v 
+# -- Compiling module altera_avalon_packets_to_master
+# -- Compiling module packets_to_fifo
+# -- Compiling module fifo_buffer_single_clock_fifo
+# -- Compiling module fifo_buffer_scfifo_with_controls
+# -- Compiling module fifo_buffer
+# -- Compiling module fifo_to_packet
+# -- Compiling module packets_to_master
+# 
+# Top level modules:
+# 	altera_avalon_packets_to_master
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_packets_to_bytes.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_packets_to_bytes.v 
+# -- Compiling module altera_avalon_st_packets_to_bytes
+# 
+# Top level modules:
+# 	altera_avalon_st_packets_to_bytes
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_bytes_to_packets.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_bytes_to_packets.v 
+# -- Compiling module altera_avalon_st_bytes_to_packets
+# 
+# Top level modules:
+# 	altera_avalon_st_bytes_to_packets
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_jtag_interface.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_jtag_interface.v 
+# -- Compiling module altera_avalon_st_jtag_interface
+# 
+# Top level modules:
+# 	altera_avalon_st_jtag_interface
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_jtag_dc_streaming.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_jtag_dc_streaming.v 
+# -- Compiling module altera_jtag_control_signal_crosser
+# -- Compiling module altera_jtag_src_crosser
+# -- Compiling module altera_jtag_dc_streaming
+# 
+# Top level modules:
+# 	altera_jtag_dc_streaming
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_jtag_sld_node.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_jtag_sld_node.v 
+# -- Compiling module altera_jtag_sld_node
+# 
+# Top level modules:
+# 	altera_jtag_sld_node
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_jtag_streaming.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_jtag_streaming.v 
+# -- Compiling module altera_jtag_streaming
+# 
+# Top level modules:
+# 	altera_jtag_streaming
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_clock_crosser.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_clock_crosser.v 
+# -- Compiling module altera_avalon_st_clock_crosser
+# 
+# Top level modules:
+# 	altera_avalon_st_clock_crosser
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_std_synchronizer_nocut.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_std_synchronizer_nocut.v 
+# -- Compiling module altera_std_synchronizer_nocut
+# 
+# Top level modules:
+# 	altera_std_synchronizer_nocut
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_idle_remover.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_idle_remover.v 
+# -- Compiling module altera_avalon_st_idle_remover
+# 
+# Top level modules:
+# 	altera_avalon_st_idle_remover
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_idle_inserter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_idle_inserter.v 
+# -- Compiling module altera_avalon_st_idle_inserter
+# 
+# Top level modules:
+# 	altera_avalon_st_idle_inserter
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_dipsw_pio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_dipsw_pio.v 
+# -- Compiling module soc_system_dipsw_pio
+# 
+# Top level modules:
+# 	soc_system_dipsw_pio
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_button_pio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_button_pio.v 
+# -- Compiling module soc_system_button_pio
+# 
+# Top level modules:
+# 	soc_system_button_pio
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/Convolver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/Convolver.v 
+# -- Compiling module Convolver
+# 
+# Top level modules:
+# 	Convolver
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/GrayscaleConverter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/GrayscaleConverter.v 
+# -- Compiling module GrayscaleConverter
+# 
+# Top level modules:
+# 	GrayscaleConverter
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/ImageFilter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/ImageFilter.v 
+# -- Compiling module ImageFilter
+# 
+# Top level modules:
+# 	ImageFilter
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/interrupt_latency_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/interrupt_latency_counter.v 
+# -- Compiling module interrupt_latency_counter
+# 
+# Top level modules:
+# 	interrupt_latency_counter
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/irq_detector.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/irq_detector.v 
+# -- Compiling module irq_detector
+# 
+# Top level modules:
+# 	irq_detector
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/state_machine_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/state_machine_counter.v 
+# -- Compiling module state_machine_counter
+# 
+# Top level modules:
+# 	state_machine_counter
+# End time: 12:59:40 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_irq_mapper_002.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:40 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_irq_mapper_002.sv 
+# -- Compiling module soc_system_irq_mapper_002
+# 
+# Top level modules:
+# 	soc_system_irq_mapper_002
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_irq_mapper_001.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_irq_mapper_001.sv 
+# -- Compiling module soc_system_irq_mapper_001
+# 
+# Top level modules:
+# 	soc_system_irq_mapper_001
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_irq_mapper.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_irq_mapper.sv 
+# -- Compiling module soc_system_irq_mapper
+# 
+# Top level modules:
+# 	soc_system_irq_mapper
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module soc_system_mm_interconnect_2_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_avalon_st_adapter_error_adapter_0
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_width_adapter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_width_adapter.sv 
+# -- Compiling module altera_merlin_width_adapter
+# 
+# Top level modules:
+# 	altera_merlin_width_adapter
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv 
+# -- Compiling module altera_merlin_address_alignment
+# 
+# Top level modules:
+# 	altera_merlin_address_alignment
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_rsp_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_rsp_mux.sv 
+# -- Compiling module soc_system_mm_interconnect_2_rsp_mux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_rsp_mux
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_cmd_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_cmd_mux.sv 
+# -- Compiling module soc_system_mm_interconnect_2_cmd_mux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_cmd_mux
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_cmd_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_cmd_demux.sv 
+# -- Compiling module soc_system_mm_interconnect_2_cmd_demux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_cmd_demux
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_router_001.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_router_001.sv 
+# -- Compiling module soc_system_mm_interconnect_2_router_001_default_decode
+# -- Compiling module soc_system_mm_interconnect_2_router_001
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_router_001
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_router.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_2_router.sv 
+# -- Compiling module soc_system_mm_interconnect_2_router_default_decode
+# -- Compiling module soc_system_mm_interconnect_2_router
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_2_router
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_rsp_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_rsp_mux.sv 
+# -- Compiling module soc_system_mm_interconnect_1_rsp_mux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1_rsp_mux
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_rsp_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:41 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_rsp_demux.sv 
+# -- Compiling module soc_system_mm_interconnect_1_rsp_demux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1_rsp_demux
+# End time: 12:59:41 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+cd /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/submodules
+# reading modelsim.ini
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_cmd_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_cmd_mux.sv 
+# -- Compiling module soc_system_mm_interconnect_1_cmd_mux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1_cmd_mux
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_cmd_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_cmd_demux.sv 
+# -- Compiling module soc_system_mm_interconnect_1_cmd_demux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1_cmd_demux
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv 
+# -- Compiling module altera_merlin_traffic_limiter
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(531): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(602): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(603): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(604): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(605): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(606): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(607): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(612): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(614): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(617): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(618): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(644): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(646): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(647): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(648): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(649): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(650): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(655): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(657): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(660): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_traffic_limiter.sv(661): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_merlin_traffic_limiter
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 21
+# vlog -vlog01compat -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -vlog01compat -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v 
+# -- Compiling module altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_router_001.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_router_001.sv 
+# -- Compiling module soc_system_mm_interconnect_1_router_001_default_decode
+# -- Compiling module soc_system_mm_interconnect_1_router_001
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1_router_001
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_router.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_1_router.sv 
+# -- Compiling module soc_system_mm_interconnect_1_router_default_decode
+# -- Compiling module soc_system_mm_interconnect_1_router
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_1_router
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_slave_ni.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_slave_ni.sv 
+# -- Compiling module altera_merlin_axi_slave_ni
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_slave_ni.sv(848): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_slave_ni.sv(853): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_slave_ni.sv(858): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_axi_slave_ni
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module soc_system_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_rsp_mux
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module soc_system_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_rsp_demux
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module soc_system_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_cmd_mux
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_cmd_demux_002.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_cmd_demux_002.sv 
+# -- Compiling module soc_system_mm_interconnect_0_cmd_demux_002
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_cmd_demux_002
+# End time: 12:59:49 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:49 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module soc_system_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_cmd_demux
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_burst_adapter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_burst_adapter.sv 
+# -- Compiling module altera_merlin_burst_adapter
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv 
+# -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
+# -- Compiling module altera_merlin_burst_adapter_adder
+# -- Compiling module altera_merlin_burst_adapter_subtractor
+# -- Compiling module altera_merlin_burst_adapter_min
+# -- Compiling module altera_merlin_burst_adapter_13_1
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_13_1
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_router_003.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_router_003.sv 
+# -- Compiling module soc_system_mm_interconnect_0_router_003_default_decode
+# -- Compiling module soc_system_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_router_003
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_router_002.sv 
+# -- Compiling module soc_system_mm_interconnect_0_router_002_default_decode
+# -- Compiling module soc_system_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_router_002
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_router.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_router.sv 
+# -- Compiling module soc_system_mm_interconnect_0_router_default_decode
+# -- Compiling module soc_system_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	soc_system_mm_interconnect_0_router
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv 
+# -- Compiling module altera_merlin_axi_master_ni
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(763): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(767): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(701): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(703): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(705): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(707): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(722): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(738): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(740): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(742): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv(744): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_merlin_axi_master_ni
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 11
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv 
+# -- Compiling module altdq_dqs2_acv_connect_to_hard_phy_cyclonev
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv(199): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv(2258): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv(2262): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv(2242): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altdq_dqs2_acv_connect_to_hard_phy_cyclonev
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv 
+# -- Compiling module altera_mem_if_hard_memory_controller_top_cyclonev
+# 
+# Top level modules:
+# 	altera_mem_if_hard_memory_controller_top_cyclonev
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_p0.sv 
+# -- Compiling module hps_sdram_p0
+# 
+# Top level modules:
+# 	hps_sdram_p0
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_pll.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/hps_sdram_pll.sv 
+# -- Compiling module hps_sdram_pll
+# 
+# Top level modules:
+# 	hps_sdram_pll
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_oct_cyclonev.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_oct_cyclonev.sv 
+# -- Compiling module altera_mem_if_oct_cyclonev
+# 
+# Top level modules:
+# 	altera_mem_if_oct_cyclonev
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_dll_cyclonev.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/altera_mem_if_dll_cyclonev.sv 
+# -- Compiling module altera_mem_if_dll_cyclonev
+# 
+# Top level modules:
+# 	altera_mem_if_dll_cyclonev
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io_border.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:59:50 on Jul 08,2022
+# vlog -reportprogress 300 -sv -work soc_system "+incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules" /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io_border.sv 
+# -- Compiling module soc_system_hps_0_hps_io_border
+# ** Error: /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io_border.sv(83): (vlog-2730) Undefined variable: 'intermediate'.
+# ** Error (suppressible): /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io_border.sv(109): (vlog-2388) 'intermediate' already declared in this scope (soc_system_hps_0_hps_io_border) at /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules/soc_system_hps_0_hps_io_border.sv(83).
+# End time: 12:59:50 on Jul 08,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/toda_iot/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./DE10_NANO_SoC_GHRD_run_msim_rtl_verilog.do line 101
+# /home/toda_iot/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv -work soc_system +incdir+/home/toda_iot/IoTProject/Hardware/ImageFilterSystem/soc_system/synthesis/submodules {/home/toda_iot/IoTProject/Hard..."
+# 
+# stdin: <EOF>
+vsim -i -l msim_transcript work.ImageFilter_TB
+# vsim -i -l msim_transcript work.ImageFilter_TB 
+# Start time: 12:59:59 on Jul 08,2022
+# Loading work.ImageFilter_TB
+# Loading work.ImageFilter
+# Loading work.GrayscaleConverter
+# Loading work.Convolver
+add wave -position end  sim:/ImageFilter_TB/clk
+add wave -position end  sim:/ImageFilter_TB/reset
+add wave -position end  sim:/ImageFilter_TB/address
+add wave -position end  sim:/ImageFilter_TB/read
+add wave -position end  sim:/ImageFilter_TB/readdata
+add wave -position end  sim:/ImageFilter_TB/write
+add wave -position end  sim:/ImageFilter_TB/writedata
+add wave -position end  sim:/ImageFilter_TB/waitrequest
+add wave -position end  sim:/ImageFilter_TB/SW
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/state
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_0
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_1
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_2
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_3
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_4
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_5
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_6
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_7
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/pixel_8
+add wave -position end  sim:/ImageFilter_TB/ImageFilterInstance/convolver/conv_out
+run -all
+# ** Note: $stop    : /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/submodules/ImageFilter_TB.v(97)
+#    Time: 461 ns  Iteration: 0  Instance: /ImageFilter_TB
+# Break in Module ImageFilter_TB at /home/toda_iot/IoTProject/Hardware/ImageFilterSystem/submodules/ImageFilter_TB.v line 97
+# End time: 20:39:28 on Jul 08,2022, Elapsed time: 7:39:29
+# Errors: 0, Warnings: 0

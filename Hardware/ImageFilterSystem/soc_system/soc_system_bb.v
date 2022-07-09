@@ -74,7 +74,8 @@ module soc_system (
 	memory_mem_odt,
 	memory_mem_dm,
 	memory_oct_rzqin,
-	reset_reset_n);	
+	reset_reset_n,
+	imagefilter_0_led_out_export);	
 
 	input	[1:0]	button_pio_external_connection_export;
 	input		clk_clk;
@@ -151,4 +152,5 @@ module soc_system (
 	output	[3:0]	memory_mem_dm;
 	input		memory_oct_rzqin;
 	input		reset_reset_n;
+	output	[6:0]	imagefilter_0_led_out_export;
 endmodule
