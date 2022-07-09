@@ -13,7 +13,8 @@ module ImageFilter #(
     input wire[31:0] writedata,
     output reg waitrequest,
     // Non-Avalon Interface IO
-    input wire[3:0] SW
+    input wire[3:0] SW,
+    output wire[6:0] fpga_led_internal
 );
 
 // define names for local addresses (in the address space of this peripheral) that are to be designated by DMAC
@@ -37,6 +38,7 @@ localparam OUTPUTREADY = 3'b101;
 
 // register to store current state
 reg [2:0] state;
+assign fpga_led_internal = {{4'b0}, state};
 
 // registers to temporarily hold the pixel data
 reg[BIT_PER_PIXEL-1:0] pixel_0_red_tmp;
