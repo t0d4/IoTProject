@@ -18,7 +18,7 @@
 #define DMA_TRANSFER_SIZE 36
 #define USE_ACP			1  //0 do not use acp, 1 use acp
 #define DMA_BUFF_PADD	(HPS_FPGA_BRIDGE_BASE + OFFSET)
-#define PREPARE_MICROCODE_WHEN_OPEN 0
+#define PREPARE_MICROCODE_WHEN_OPEN 1
 
 // CONSTANTS FOR IMAGE FILTER
 #define PIXEL_SIZE 9
@@ -62,7 +62,7 @@ char filtering(char pixels[3][3][3], int f) {
       return errno;
     }
 
-    char output;
+    char outbuff[DMA_TRANSFER_SIZE];
 
     // Read from FPGA to uP
     if (f < 0){
@@ -70,13 +70,13 @@ char filtering(char pixels[3][3][3], int f) {
       return errno;
     }
     // we only have to read 1 byte
-    ret = read(f, &output, 1);
+    ret = read(f, outbuff, DMA_TRANSFER_SIZE);
     if (ret < 0){
       perror("Failed to read the message from the device.");
       return errno;
     }
 
-    return output;
+    return outbuff[0];
 }
 
 int main(int argc, char **argv) {
@@ -224,6 +224,7 @@ int main(int argc, char **argv) {
 
   //-------------------WRITE BMP FILE-----------------//
   fp = fopen(argv[2], "wb");
+
   fwrite(&BitMapFileHeader, sizeof(char), 14, fp); 
   fwrite(&biSize, sizeof(int), 1, fp);             
   fwrite(&biWidth, sizeof(int), 1, fp);            
