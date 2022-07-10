@@ -32,13 +32,14 @@ def get_json_containing_edge_detected_image(request_json):
     finally:
         original_image_file.close()
     # Step2. execute edge detection
-    edge_detected_image_filepath = original_image_filepath + ".out"
+    # convert the image file to .bmp in case it is not .bmp
     process = subprocess.call(["convert", original_image_filepath, "-type", "truecolor", original_image_filepath])
     if process != 0:
         print(process)
         print("[Error] Error occurred in image conversion")
         return
     print("[Info] Successfully converted image format")
+    edge_detected_image_filepath = original_image_filepath + ".out"
     process = subprocess.call([EDGE_FILTER_PATH, original_image_filepath, edge_detected_image_filepath])
     if process != 0:
         print(process)
