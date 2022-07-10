@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edge Detection</title>
+        <script>
+            window.addEventListener('DOMContentLoaded', function(){
+
+                document.getElementById("input_file").addEventListener("change", loadImg, false);
+                function loadImg(e) {
+                    // load file
+                    const file = this.files[0]
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        // create empty image instance
+                        const image = new Image();
+                        image.src = reader.result;
+                        // display image
+                        const canvas = document.getElementById('canvas');
+                        const ctx = canvas.getContext('2d');
+                        image.onload = () => {
+                            ctx.drawImage(image, 0, 0, 512, 384);
+                        }
+                    };
+                    // read image as base64
+                    reader.readAsDataURL(file)
+                }
+
+                document.getElementById("upload_file").addEventListener('click', retrieveEdgeDetectedImage, false);
+                function retrieveEdgeDetectedImage(e){
+                    const canvas = document.getElementById('canvas');
+                    let data = {
+                        // remove "data:image/bmp;base64," from the beginning of the string
+                        "base64_image": canvas.toDataURL('image/bmp').replace(/data:.*\/.*;base64,/, '')
+                    };
+                    // make API call
+                    fetch('/post', {
+                        method: 'post',
+                        header: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    })
+                    .then(response => response.json())  // when response arrives
+                    .then(data => {
+                        // create empty image instance
+                        const image = new Image();
+                        image.src = "data:image/bmp;base64," + data.base64_edge_detected_image;
+                        // display image
+                        const canvas = document.getElementById('canvas');
+                        const ctx = canvas.getContext('2d');
+                        image.onload = () => {
+                            ctx.drawImage(image, 0, 0, 512, 384);
+                        }
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h2>エッジ抽出APIデモ</h2>
+        <canvas id="canvas" width="512" height="384"></canvas>
+        <p>.bmp形式の画像を選択し、エッジ抽出ボタンを押して下さい</p>
+        <div class="input_area">
+            <input type="file" id="input_file" accept=".bmp">
+        </div>
+        <input type="button" id="upload_file" value="エッジ抽出">
+    </body>
