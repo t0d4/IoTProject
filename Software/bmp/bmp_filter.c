@@ -45,8 +45,8 @@ char filtering(char pixels[3][3][3], int f) {
   for(int i = 0; i < 3; i++) {
     for(int j = 0; j < 3; j++) {
       for(int k = 0; k < 4; k++) {
-        if(k == 3) buffer[12*i + 4*j + k] = 0;
-        else buffer[12*i + 4*j + k] = pixels[i][j][k];
+        if(k == 3) buffer[12*(2-i) + 4*j + k] = 0;
+        else buffer[12*(2-i) + 4*j + k] = pixels[i][j][k];
       }
     }
   }
