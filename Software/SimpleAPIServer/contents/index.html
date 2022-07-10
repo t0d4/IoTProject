@@ -10,7 +10,7 @@
                 document.getElementById("input_file").addEventListener("change", loadImg, false);
                 function loadImg(e) {
                     // load file
-                    const file = this.files[0]
+                    const file = this.files[0];
                     const reader = new FileReader();
                     reader.onload = () => {
                         // create empty image instance
