@@ -225,10 +225,6 @@ int main(int argc, char **argv) {
   //-------------------WRITE BMP FILE-----------------//
   fp = fopen(argv[2], "wb");
 
-  biSize = biSize - (3 * (2*biWidth + 2*biHeight - 4));
-  biWidth = biWidth - 2;
-  biHeight = biHeight - 2;
-
   fwrite(&BitMapFileHeader, sizeof(char), 14, fp); 
   fwrite(&biSize, sizeof(int), 1, fp);             
   fwrite(&biWidth, sizeof(int), 1, fp);            
