@@ -25,30 +25,34 @@ def get_json_containing_edge_detected_image(request_json):
         original_image_filepath = os.path.join(IMAGE_PATH, random_filename)
         original_image_file = open(original_image_filepath, mode="wb")
         original_image_file.write(raw_original_image)
+        print("[Info] Successfully saved original image as {}".format(random_filename))
     except:
-        print("Error occurred in reading original image")
+        print("[Error] Error occurred in reading original image")
         return
     finally:
         original_image_file.close()
     # Step2. execute edge detection
-    edge_detected_image_filepath = original_image_filepath + "out"
+    edge_detected_image_filepath = original_image_filepath + ".out"
     process = subprocess.call(["convert", original_image_filepath, "-type", "truecolor", original_image_filepath])
     if process != 0:
         print(process)
-        print("Error occurred in image conversion")
+        print("[Error] Error occurred in image conversion")
         return
+    print("[Info] Successfully converted image format")
     process = subprocess.call([EDGE_FILTER_PATH, original_image_filepath, edge_detected_image_filepath])
     if process != 0:
         print(process)
-        print("Error occurred in executing edge detection")
+        print("[Error] Error occurred in executing edge detection")
         return
+    print("[Info] Successfully executed edge detection")
     # Step3. convert edge-detected image to json string
     try:
         edge_detected_image_file = open(edge_detected_image_filepath, mode="rb")
         edge_detected_image = edge_detected_image_file.read()
         edge_detected_image_base64 = base64.b64encode(edge_detected_image).decode()
+        print("[Info] Successfully created base64 string for edge-detected image")
     except:
-        print("Error occurred in creating base64 string for response")
+        print("[Error] Error occurred in creating base64 string for response")
         return
     finally:
         edge_detected_image_file.close()
