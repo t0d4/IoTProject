@@ -40,7 +40,6 @@
 
 # Python utilities
 !**/SimpleAPIServer/**
-*.py
 
 # bmp image
 !/Software/bmp/img/*
