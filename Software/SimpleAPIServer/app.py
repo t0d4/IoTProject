@@ -8,7 +8,7 @@ from wsgiref.simple_server import make_server
 
 CONTENTS_PATH = "contents"
 IMAGE_PATH = "image"
-EDGE_FILTER_PATH = os.path.join(os.environ["HOME"], "bmp", "bmp_filter")
+EDGE_FILTER_PATH = os.path.join(os.environ["HOME"], "bmp", "bmp_filter_premicro")
 
 # function to get random filename when temporary saving original image
 def get_random_bmp_filename(n):
