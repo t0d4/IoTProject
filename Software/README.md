@@ -1,15 +1,9 @@
-# ソフトウェアに関する諸注意
+# ソフトウェア
 
-## 前提
-- libjpegのインストール
+## 実行方法
+```
+./bmp_filter <input.bmp> <output.bmp>
+```
 
-
-### libjpeg
-
-[ここ](http://www.ijg.org/)からダウンロード
-
-展開しそのフォルダ内で`./configure`を実行する
-
-`make`でライブラリ生成、`sudo make install`でインストールを行う
-
-実行ファイルを生成時は`-ljpeg`をつけてligjpegにリンクする
+## 前提条件
+- 入力画像のサイズは高さと幅いずれも512以下
