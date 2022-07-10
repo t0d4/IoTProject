@@ -39,4 +39,4 @@
 !*.tcl
 
 # Python utilities
-*.py
+!**/SimpleAPIServer/**
