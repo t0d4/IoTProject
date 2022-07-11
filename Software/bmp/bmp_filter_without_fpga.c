@@ -1,10 +1,55 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define MAX_HEIGHT 512
 #define MAX_WIDTH 512
 
+int r_filter[9];
+const int r_filter_4n[] = {0, 1, 0, 1, -4, 1, 0, 1, 0}; // 4 neighborhood
+const int r_filter_8n[] = {1, 2, 1, 2, -14, 2, 1, 2, 1}; // 8 neighborhood
+
+char filtering(char pixels[3][3][3]) {
+  char gray[3][3];
+
+  for(int i = 0; i < 3; i++) {
+    for(int j = 0; j < 3; j++) {
+      int ave = 0;
+      for(int k = 0; k < 3; k++) {
+        ave += pixels[i][j][k];
+      }
+      ave = ave / 3;
+      gray[i][j] = (char)ave;
+    }
+  }
+
+  int res = 0;
+  for(int i = 0; i < 3; i++) {
+    for(int j = 0; j < 3; j++) {
+      res += (int)gray[i][j] * r_filter[3*i + j];
+    }
+  }
+
+  if(res < 0) res = 0;
+  if(res > 255) res = 255;
+
+  return (char)(res);
+}
+
 int main(int argc, char **argv)
 {
+  if(argc < 4) {
+    printf("You need to pass 3 arguments. <input.bmp> <output.bmp> <-4n|-8n>\n");
+    exit(-1);
+  }
+  if(strcmp(argv[3], "-4n") == 0) {
+    memcpy(r_filter, r_filter_4n, sizeof(r_filter_4n));
+  } else if(strcmp(argv[3], "-8n") == 0) {
+    memcpy(r_filter, r_filter_8n, sizeof(r_filter_8n));
+  } else {
+    printf("Invalid third argument.\n");
+  }
+
   //-------------------READ BMP FILE-----------------//
   unsigned char img[MAX_HEIGHT][MAX_WIDTH][3];
   unsigned char BitMapFileHeader[14];
@@ -36,51 +81,31 @@ int main(int argc, char **argv)
 
 
   //-------------------EDIT BMP FILE-----------------//
+  unsigned char filtered_img[MAX_HEIGHT][MAX_WIDTH][3];
 
-  // printf("height : %d\n", biHeight);
-  // printf("width  : %d\n", biWidth);
-
-  // grayscaling
   for (int i = 0; i < biHeight; i++)
   {
     for (int j = 0; j < biWidth; j++)
     {
-      int su = 0;
-      for (int c = 0; c < 3; c++)
-      {                                            
-        su = su + (int)(img[i][j][c]);
-      }
-      su = su / 3;
-      // printf("(%3d, %3d) bf: %3d, %3d, %3d   ", 
-      //   i, j, (int)img[i][j][0], (int)img[i][j][1], (int)img[i][j][2]);
-      unsigned char ave = (char)su;
-      for (int c = 0; c < 3; c++)
-      {                                            
-        img[i][j][c] = ave;
-      }
-      // printf("af: %3d, %3d, %3d\n", (int)img[i][j][0], (int)img[i][j][1], (int)img[i][j][2]);
-    }
-  }
-
-  // filtering
-  unsigned char filtered_img[MAX_HEIGHT][MAX_WIDTH][3];
-  int filter[9] = {0, 1, 0, 1, -4, 1, 0, 1, 0};
-  // int filter[9] = {1, 1, 1, 1, -8, 1, 1, 1, 1};
-  for(int i = 0; i < biHeight; i++) {
-    for(int j = 0; j < biWidth; j++) {
       if(i >= biHeight-2 || j >= biWidth-2) {
         for(int c = 0; c < 3; c++) {
           filtered_img[i][j][c] = 0;
         }
         continue;
       }
-      int sum = img[i][j][0]*filter[0] + img[i][j+1][0]*filter[1] + img[i][j+2][0]*filter[2] +
-                img[i+1][j][0]*filter[3] + img[i+1][j+1][0]*filter[4] + img[i+1][j+2][0]*filter[5] +
-                img[i+2][j][0]*filter[6] + img[i+2][j+1][0]*filter[7] + img[i+2][j+2][0]*filter[8];
-      if(sum < 0) sum = 0;
-      if(sum > 255) sum = 255;
+
+      char pixels[3][3][3];
+      for(int h_pos = 0; h_pos < 3; h_pos++) {
+        for(int w_pos = 0; w_pos < 3; w_pos++) {
+          for(int c = 0; c < 3; c++) {
+            pixels[h_pos][w_pos][c] = img[i+h_pos][j+w_pos][c];
+          }
+        }
+      }
+
+      char ret = filtering(pixels);
       for(int c = 0; c < 3; c++) {
-        filtered_img[i][j][c] = (char)sum;
+        filtered_img[i][j][c] = ret;
       }
     }
   }
