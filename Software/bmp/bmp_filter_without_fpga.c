@@ -5,9 +5,8 @@
 #define MAX_HEIGHT 512
 #define MAX_WIDTH 512
 
-int r_filter[9];
-const int r_filter_4n[] = {0, 1, 0, 1, -4, 1, 0, 1, 0}; // 4 neighborhood
-const int r_filter_8n[] = {1, 2, 1, 2, -14, 2, 1, 2, 1}; // 8 neighborhood
+const int r_filter[] = {0, 1, 0, 1, -4, 1, 0, 1, 0}; // 4 neighborhood
+// const int r_filter[] = {1, 2, 1, 2, -14, 2, 1, 2, 1}; // 8 neighborhood
 
 char filtering(char pixels[3][3][3]) {
   char gray[3][3];
@@ -38,17 +37,6 @@ char filtering(char pixels[3][3][3]) {
 
 int main(int argc, char **argv)
 {
-  if(argc < 4) {
-    printf("You need to pass 3 arguments. <input.bmp> <output.bmp> <-4n|-8n>\n");
-    exit(-1);
-  }
-  if(strcmp(argv[3], "-4n") == 0) {
-    memcpy(r_filter, r_filter_4n, sizeof(r_filter_4n));
-  } else if(strcmp(argv[3], "-8n") == 0) {
-    memcpy(r_filter, r_filter_8n, sizeof(r_filter_8n));
-  } else {
-    printf("Invalid third argument.\n");
-  }
 
   //-------------------READ BMP FILE-----------------//
   unsigned char img[MAX_HEIGHT][MAX_WIDTH][3];
