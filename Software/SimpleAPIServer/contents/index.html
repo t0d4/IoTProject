@@ -31,8 +31,8 @@
                 function retrieveEdgeDetectedImage(e){
                     const canvas = document.getElementById('canvas');
                     let data = {
-                        // remove "data:image/bmp;base64," from the beginning of the string
-                        "base64_image": canvas.toDataURL('image/bmp').replace(/data:.*\/.*;base64,/, '')
+                        // remove "data:image/png;base64," from the beginning of the string
+                        "base64_image": canvas.toDataURL('image/png').replace(/data:.*;base64,/, '')
                     };
                     // make API call
                     fetch('/post', {
