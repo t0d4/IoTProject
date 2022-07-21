@@ -12,17 +12,23 @@
   <!-- load bs-custom-file-input plugin -->
   <script src="bs-custom-file-input.js"></script>
   <title>Edge Detection</title>
+  <style>
+    .container{
+      margin: 30px;
+    }
+    .flex{
+      display: flex;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
     <h1>エッジ抽出APIデモ</h1>
-    <canvas id="canvas" width="512" height="384"></canvas>
-    <!-- <p>.bmp, .jpg, .jpeg形式の画像を選択し、エッジ抽出ボタンを押して下さい</p> -->
-    <!-- <div class="input_area">
-    <input type="file" id="input_file" accept=".bmp, .jpg, .jpeg" required>
-  </div>
-  <input type="button" id="upload_file" value="エッジ抽出"> -->
+    <div class="flex">
+      <canvas id="canvas-l" width="512" height="384"></canvas>
+      <canvas id="canvas-r" width="512" height="384"></canvas>
+    </div>
     <form>
       <br>
       <div class="form-group">
@@ -55,7 +61,7 @@
           const image = new Image();
           image.src = reader.result;
           // display image
-          const canvas = document.getElementById('canvas');
+          const canvas = document.getElementById('canvas-l');
           const ctx = canvas.getContext('2d');
           image.onload = () => {
             ctx.drawImage(image, 0, 0, 512, 384);
@@ -67,7 +73,7 @@
 
       document.getElementById("upload_file").addEventListener('click', retrieveEdgeDetectedImage, false);
       function retrieveEdgeDetectedImage(e) {
-        const canvas = document.getElementById('canvas');
+        const canvas = document.getElementById('canvas-l');
         let data = {
           // remove "data:image/png;base64," from the beginning of the string
           "base64_image": canvas.toDataURL('image/png').replace(/data:.*;base64,/, '')
@@ -86,7 +92,7 @@
             const image = new Image();
             image.src = "data:image/bmp;base64," + data.base64_edge_detected_image;
             // display image
-            const canvas = document.getElementById('canvas');
+            const canvas = document.getElementById('canvas-r');
             const ctx = canvas.getContext('2d');
             image.onload = () => {
               ctx.drawImage(image, 0, 0, 512, 384);
