@@ -120,8 +120,10 @@ def app(environ, start_response):
 if __name__ == '__main__':
     if not os.path.exists(IMAGE_PATH):
         print("[Error] Image directory was not found. A directory named \"image\" is required to exist in the same directory.")
+        exit(0)
     if not os.path.exists(CONTENTS_PATH):
         print("[Error] Contents directory was not found. A directory named \"contents\" is required to exist in the same directory.")
+        exit(0)
     try:
         httpd = make_server('', 3000, app)
         print("Serving on port 3000...")
