@@ -8,7 +8,7 @@ from wsgiref.simple_server import make_server
 
 CONTENTS_PATH = "contents"
 IMAGE_PATH = "image"
-EDGE_FILTER_PATH = os.path.join(os.environ["HOME"], "bmp", "bmp_filter_premicro")
+EDGE_FILTER_PATH = os.path.join("bin", "bmp_filter_premicro")
 
 # function to get random filename when temporary saving original image
 def get_random_bmp_filename(n):
@@ -62,17 +62,30 @@ def get_json_containing_edge_detected_image(request_json):
 
 def on_html(environ, start_response):
     path = environ["PATH_INFO"]
-    headers = [('Content-type', 'text/html; charset=utf-8')]
     if path in ("", "/"):
-        path = os.path.join(CONTENTS_PATH, "index.html")
-        with open(path, encoding="utf-8") as html:
+        html_path = os.path.join(CONTENTS_PATH, "index.html")
+        with open(html_path, encoding="utf-8") as html:
             status = '200 OK'
+            headers = [('Content-type', 'text/html; charset=utf-8')]
             start_response(status, headers)
             return [html.read().encode(encoding="utf-8")]
     else:
-        status = '404 Not Found'
-        start_response(status, headers)
-        return [bytes(path, encoding="utf-8")]
+        # when requested other resources than html
+        resource_path = os.path.join(CONTENTS_PATH, path.replace('/', ''))
+        if os.path.exists(resource_path):
+            status = '200 OK'
+            if path.endswith(".js"):
+                headers = [('Content-type', 'text/javascript; charset=utf-8')]
+            elif path.endswith(".css"):
+                headers = [('Content-type', 'text/css; charset=utf-8')]
+            start_response(status, headers)
+            with open(resource_path, encoding="utf-8") as resource_file:
+                return [resource_file.read().encode(encoding="utf-8")]
+        else:
+            status = '404 Not Found'
+            headers = [('Content-type', 'text/html; charset=utf-8')]
+            start_response(status, headers)
+            return [bytes(path, encoding="utf-8")]
 
 
 def on_api(environ, start_response):
